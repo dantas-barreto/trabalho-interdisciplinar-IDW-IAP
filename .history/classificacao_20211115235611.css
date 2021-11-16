@@ -1,0 +1,30 @@
+.soft-skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.soft-skill {
+  background-color: rgba(68, 86, 108, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  width: calc(25% - 8px);
+}
+
+.soft-skill-rating {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-family: Times;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.soft-skill-rating::before {
+  background-clip: text;
+  background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
+  content: "★★★★★";
+  letter-spacing: 3px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "trabalho-interdisciplinar-idw-iap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantas-barreto/trabalho-interdisciplinar-IDW-IAP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dantas-barreto/trabalho-interdisciplinar-IDW-IAP/issues"
+  },
+  "homepage": "https://github.com/dantas-barreto/trabalho-interdisciplinar-IDW-IAP#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^6.0.1"
+  }
+}
