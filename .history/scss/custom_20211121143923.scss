@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+  "bgPrincipal": #ebebeb,
+  "fontColor": #292929,
+  "optionOne": #610ce9,
+  "optionTwo": #2c34c9,
+  "optionThree": #3aa2f8,
+);
