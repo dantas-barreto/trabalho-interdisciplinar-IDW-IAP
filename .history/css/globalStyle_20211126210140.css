@@ -1,0 +1,50 @@
+:root {
+  --fontColor: #292929;
+  --bgColor: #ebebeb;
+  --header: #610ce9;
+  --general: #2c34c9;
+}
+
+* {
+  color: var(--fontColor);
+}
+
+.a {
+  color: var(--fontColor);
+}
+
+/* Header */
+.header {
+  background-color: #72efdd;
+}
+/* End Header */
+
+/* Stars */
+.classificacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classificacao {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.qualidade {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.qualidade::before {
+  background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* End Stars */

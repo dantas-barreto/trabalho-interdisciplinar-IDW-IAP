@@ -1,0 +1,68 @@
+:root {
+  --fontColor: #292929;
+  --bgColor: #ebebeb;
+  --header: #610ce9;
+  --general: #2c34c9;
+  --effect: #4aa2f8;
+
+  --fontColorClosed: #1b1b1b;
+  --bgColorClosed: #989898;
+  --headerClosed: #3f0897;
+  --generalClosed: #1d2282;
+  --effectClosed: #076dc0;
+}
+
+* {
+  color: var(--fontColor);
+}
+
+.a {
+  color: var(--bgColor);
+}
+
+.a:hover {
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: var(--effectClosed);
+}
+/* End Header */
+
+/* Icons */
+.bi {
+  width: 4em;
+  height: 4em;
+}
+/* End Icons */
+
+/* Stars */
+.classificacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classificacao {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.qualidade {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.qualidade::before {
+  background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* End Stars */
