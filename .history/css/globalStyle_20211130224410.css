@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: var(--bgColor);
+  background-color: var(--fontColor);
 }
 
 .headerOption:hover {

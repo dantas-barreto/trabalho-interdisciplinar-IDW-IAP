@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg header">
       <div class="container-fluid">
-        <a class="navbar-brand" href="signin.html">
+        <a class="navbar-brand" href="#">
           <img
             src="img/logo.png"
             width="90rem"
@@ -112,27 +112,45 @@
 
     <main class="form-signin text-center">
       <form>
-        <h1 class="h3 mb-3 fw-normal">Olá! Digite o seu e-mail e senha.</h1>
-        <div class="form-floating mb-2">
+        <h1 class="h3 mb-3 fw-normal">Para se cadastrar é muito simples!</h1>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Ex.: Gabriel Fernandes Bino"
+          />
+          <label for="floatingInput">Digite o seu Nome</label>
+        </div>
+        <div class="form-floating mt-2 mb-2">
           <input
             type="email"
             class="form-control"
             id="floatingInput"
             placeholder="nome@exemplo.com"
           />
-          <label for="floatingInput">Endereço de email</label>
+          <label for="floatingInput">Digite seu melhor Email</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating">
           <input
+            type="senha"
             class="form-control"
             id="floatingPassword"
             placeholder="Senha"
           />
-          <label for="floatingPassword">Senha</label>
+          <label for="floatingPassword">Escolha uma Senha</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Lembrar de mim
+          </label>
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">
-          Entrar
+          Sign in
         </button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
       </form>
     </main>
 
