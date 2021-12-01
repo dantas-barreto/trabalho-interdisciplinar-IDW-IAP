@@ -77,7 +77,7 @@
 
 .block {
   width: calc(
-    100% / 3 - 20px
+    100% / 4 - 20px
   ); /*divide 100% da tela em 3 partes e subtrai o valor lateral da margem*/
   margin: 10px;
   background-color: #fff;
