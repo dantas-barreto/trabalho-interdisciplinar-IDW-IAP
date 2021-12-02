@@ -37,6 +37,22 @@ class DB {
 
         localStorage.setItem('id', id)
     }
+
+    recuperarTodosCadastros() {
+
+        let clientes = Array()
+        let id = localStorage.getItem('id')
+
+        for (let i = 1; i <= id; i++) {
+            let cliente = JSON.parse(localStorage.getItem(i))
+            if (cliente === null) {
+                continue
+            }
+            clientes.id = i
+            clientes.push(cliente)
+        }
+        return clientes
+    }
 }
 
 let db = new DB()
@@ -56,8 +72,14 @@ function cadastroCliente() {
     if(cliente.validarDados()) {
         db.gravar(cliente)
 
-        //mudar para a pagina inicial
+        nome.value = ''
+        email.value = ''
+        senha.value = ''
+
+        //mudança de pagina
     } else {
-        //implementar a mensagem de erro
+        document.getElementById('warningText').innerHTML = ''
+        document.getElementById('warningText').innerHTML = 'Ocorreu um erro! Por favor tente novamente.'
     }
 }
+
