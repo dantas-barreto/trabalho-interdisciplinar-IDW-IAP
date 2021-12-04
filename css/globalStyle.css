@@ -111,3 +111,10 @@ body {
   border-top: 1px solid #ccc;
 }
 /* End Cards */
+
+.colunatres {    /*css página product*/
+  color:#3483fa
+}                 
+.botoes {
+  color: white;
+}                 /*fim css página product*/
