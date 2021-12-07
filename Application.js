@@ -15,9 +15,8 @@ class Cliente {
 }
 
 class Carrinho {
-    constructor(statusLogin, cliente, item) {
+    constructor(statusLogin, item) {
         this.statusLogin = statusLogin
-        this.cliente = cliente
         this.item = item
     }
 }
@@ -98,10 +97,18 @@ function loginCliente() {
     let clienteCadastrado = new Cliente(email, senha)
 
     if (clienteCadastrado.validarCadastro()) {
-        //carrinho de compras
+        let carrinho = new Carrinho(true, 0)
+
+        carrinhoCompras.gravar(carrinho)
+
+        window.open('index.html')
 
     } else {
         document.getElementById('warningLoginText').innerHTML = ''
         document.getElementById('warningLoginText').innerHTML = 'Ocorreu um erro! Por favor tente novamente.'
     }
+}
+
+function adicionarItemCarrinho() {
+    
 }
