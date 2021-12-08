@@ -15,9 +15,15 @@ class Cliente {
 }
 
 class Carrinho {
-    constructor(statusLogin, item) {
+    constructor(statusLogin) {
         this.statusLogin = statusLogin
-        this.item = item
+    }
+}
+
+class Produto {
+    constructor(titulo, preco) {
+        this.titulo = titulo
+        this.preco = preco
     }
 }
 
@@ -63,7 +69,12 @@ class DB {
 
 let db = new DB()
 
-let carrinhoCompras = new DB()
+var carrinho = Array()
+
+if (localStorage.getItem("carrinho") != null) {
+    carrinho = JSON.parse(localStorage.getItem("carrinho"))
+    listaCarrinho()
+}
 
 function cadastroCliente() {
    
@@ -97,12 +108,7 @@ function loginCliente() {
     let clienteCadastrado = new Cliente(email, senha)
 
     if (clienteCadastrado.validarCadastro()) {
-        let carrinho = new Carrinho(true, 0)
-
-        carrinhoCompras.gravar(carrinho)
-
         window.open('index.html')
-
     } else {
         document.getElementById('warningLoginText').innerHTML = ''
         document.getElementById('warningLoginText').innerHTML = 'Ocorreu um erro! Por favor tente novamente.'
@@ -110,5 +116,26 @@ function loginCliente() {
 }
 
 function adicionarItemCarrinho() {
-    
+    let titulo = document.getElementById('').value //adicionar id
+    let preco = document.getElementById('').value //adicionar id
+
+    var itemCarrinho = new Produto(titulo, preco)
+
+    carrinho.push(itemCarrinho)
+
+    let texto_carrinho = JSON.stringify(carrinho)
+    localStorage.setItem("carrinho", texto_carrinho)
+    listaCarrinho()
+}
+
+function listaCarrinho() {
+    var textoArmazenado = localStorage.getItem("carrinho")
+    var listaCarrinho = JSON.parse(textoArmazenado)
+    var lista = document.getElementById('') //adicionar id
+
+    lista.innerHTML = ''
+
+    for (let i = 0; i < listaCarrinho.length; i++) {
+        lista.innerHTML += `` // bloco do produto
+    }
 }
