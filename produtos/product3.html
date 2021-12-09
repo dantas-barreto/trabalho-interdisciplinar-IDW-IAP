@@ -15,6 +15,9 @@
     />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/globalStyle.css" />
+
+    <script src="../Application.js"></script>
+
     <title>DevTech Express</title>
   </head>
   <body>
@@ -101,7 +104,7 @@
               placeholder="Buscar produtos"
               aria-label="Search"
             />
-            <button class="btn btn-outline-light" type="submit">
+            <button class="btn btn-outline-light me-3" type="submit">
               Procurar
             </button>
           </form>
@@ -117,9 +120,9 @@
               <div class="ms-5 me-1 pt-4"><img src="../../trabalho-interdisciplinar-IDW-IAP/img/nokia.webp"></div>
             </div> 
             <div class="col-md-4 pt-4">
-              <h1>Nokia 110 (2019) Dual SIM 32 MB preto 32 MB RAM</h1>
+              <h1 id="titulo">Nokia 110 (2019) Dual SIM 32 MB preto 32 MB RAM</h1>
               <br>
-              <h2>R$145,30</h2>
+              <h2 id="preco">R$145,30</h2>
               <br>
               <h3>Descrição:</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -132,7 +135,7 @@
                 <div class="card-body">
                   <div class="d-grid gap-2">
                     <button class="btn btn-primary" type="button"><b class="botoes">Comprar</b></button>
-                    <button class="btn btn-primary" type="button"><b class="botoes">Adicionar ao carrinho</b></button>
+                    <button class="btn btn-primary" type="button" onclick="adicionarItemCarrinho()"><b class="botoes">Adicionar ao carrinho</b></button>
                   </div>
                   <p class="card-text"><div><b class="colunatres">Devolução Grátis: </b></div>Você tem 7 dias a partir da data de recebimento.</p>
                   <p class="card-text"><div><b class="colunatres">Compra Garantida: </b></div>Receba o produto que está esperando ou devolvemos o dinheiro.</p>

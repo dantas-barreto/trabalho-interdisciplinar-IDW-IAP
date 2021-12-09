@@ -71,11 +71,6 @@ let db = new DB()
 
 var carrinho = Array()
 
-if (localStorage.getItem("carrinho") != null) {
-    carrinho = JSON.parse(localStorage.getItem("carrinho"))
-    listaCarrinho()
-}
-
 function cadastroCliente() {
    
     let email = document.getElementById('email')
@@ -116,8 +111,8 @@ function loginCliente() {
 }
 
 function adicionarItemCarrinho() {
-    let titulo = document.getElementById('').value //adicionar id
-    let preco = document.getElementById('').value //adicionar id
+    var titulo = document.getElementById('titulo').innerHTML
+    var preco = document.getElementById('preco').innerHTML
 
     var itemCarrinho = new Produto(titulo, preco)
 
@@ -131,11 +126,25 @@ function adicionarItemCarrinho() {
 function listaCarrinho() {
     var textoArmazenado = localStorage.getItem("carrinho")
     var listaCarrinho = JSON.parse(textoArmazenado)
-    var lista = document.getElementById('') //adicionar id
+    var lista = document.getElementById('carrinhoCompras')
 
     lista.innerHTML = ''
 
     for (let i = 0; i < listaCarrinho.length; i++) {
-        lista.innerHTML += `` // bloco do produto
+        lista.innerHTML += `
+            <div class="card mb-3 ms-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/iphone.webp" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">${listaCarrinho[i]["titulo"]}</h3>
+                            <h5>${listaCarrinho[i]["preco"]}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
     }
 }
