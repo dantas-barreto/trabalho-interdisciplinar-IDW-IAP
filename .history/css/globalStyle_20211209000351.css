@@ -25,7 +25,6 @@
 html {
   min-width: 100vw;
   max-width: none;
-  overflow-x: hidden;
 }
 
 hr {
@@ -120,7 +119,7 @@ div a {
 }
 
 .lead {
-  max-width: fit-content;
+  max-width: min-content;
 }
 
 #paginacarrinho {

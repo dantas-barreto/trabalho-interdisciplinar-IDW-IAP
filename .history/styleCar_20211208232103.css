@@ -1,0 +1,11 @@
+.card {
+  width: 100rem;
+}
+
+.Cont {
+  display: flex;
+}
+
+.Child {
+  width: 100%;
+}

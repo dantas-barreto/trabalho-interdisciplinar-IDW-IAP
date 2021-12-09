@@ -1,0 +1,19 @@
+.card:hover {
+  box-shadow: none;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.margin {
+  margin-left: 22px;
+  background-color: white;
+  text-align: center;
+  width: 900px;
+}
+
+.card-body {
+  width: 100%;
+}

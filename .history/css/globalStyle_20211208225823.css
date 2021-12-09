@@ -22,16 +22,6 @@
   color: var(--fontColor);
 }
 
-html {
-  min-width: 100vw;
-  max-width: none;
-  overflow-x: hidden;
-}
-
-hr {
-  max-width: 99rem;
-}
-
 body {
   background-color: var(--bgColor);
 }
@@ -45,6 +35,10 @@ body {
   background-color: var(--effectClosed);
 }
 /* End Header */
+
+/* Icons */
+
+/* End Icons */
 
 /* Stars */
 .classificacao {
@@ -79,8 +73,11 @@ body {
 /* Cards */
 .card {
   max-width: 11.9rem;
-  margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.car {
+  width: 100%;
 }
 
 div a {
@@ -117,10 +114,6 @@ div a {
 }
 .botoes {
   color: white;
-}
-
-.lead {
-  max-width: fit-content;
 }
 
 #paginacarrinho {

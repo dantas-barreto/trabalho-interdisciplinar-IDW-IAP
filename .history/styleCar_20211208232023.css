@@ -1,0 +1,7 @@
+.Cont {
+  display: flex;
+}
+
+.Child {
+  width: 100%;
+}

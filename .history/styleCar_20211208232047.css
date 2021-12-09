@@ -1,0 +1,11 @@
+.row {
+  width: 100%;
+}
+
+.Cont {
+  display: flex;
+}
+
+.Child {
+  width: 100%;
+}
