@@ -76,7 +76,7 @@ body {
   margin-bottom: 20px;
 }
 
-div a {
+.a {
   text-decoration: none;
 }
 
@@ -110,10 +110,4 @@ div a {
 }
 .botoes {
   color: white;
-}
-
-#paginacarrinho {
-  background-color: black;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+} /*fim css página product*/

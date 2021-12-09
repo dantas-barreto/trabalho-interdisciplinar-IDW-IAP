@@ -76,21 +76,16 @@ body {
   margin-bottom: 20px;
 }
 
-div a {
-  text-decoration: none;
+.larg {
+  max-width: 11.9rem;
 }
 
-.card:hover {
-  box-shadow: 2px 4px 9px 2px var(--effectOpen);
-  cursor: pointer;
-}
-
-.card-title:hover {
-  text-decoration: underline;
+.contDown {
+  display: flex;
 }
 
 .cont {
-  max-width: 105rem;
+  max-width: 101rem;
 }
 
 .card-img {
@@ -110,10 +105,4 @@ div a {
 }
 .botoes {
   color: white;
-}
-
-#paginacarrinho {
-  background-color: black;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+} /*fim css página product*/

@@ -71,28 +71,6 @@ body {
 /* End Stars */
 
 /* Cards */
-.card {
-  max-width: 11.9rem;
-  margin-bottom: 20px;
-}
-
-div a {
-  text-decoration: none;
-}
-
-.card:hover {
-  box-shadow: 2px 4px 9px 2px var(--effectOpen);
-  cursor: pointer;
-}
-
-.card-title:hover {
-  text-decoration: underline;
-}
-
-.cont {
-  max-width: 105rem;
-}
-
 .card-img {
   display: flex;
   flex-flow: column nowrap;
@@ -110,10 +88,4 @@ div a {
 }
 .botoes {
   color: white;
-}
-
-#paginacarrinho {
-  background-color: black;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+} /*fim css página product*/
