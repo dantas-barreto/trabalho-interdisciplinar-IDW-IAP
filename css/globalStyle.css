@@ -110,4 +110,10 @@ div a {
 }
 .botoes {
   color: white;
-} /*fim css página product*/
+}
+
+#paginacarrinho {
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
