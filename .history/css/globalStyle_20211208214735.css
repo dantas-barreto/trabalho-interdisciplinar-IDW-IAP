@@ -72,25 +72,12 @@ body {
 
 /* Cards */
 .card {
-  max-width: 11.9rem;
+  max-width: 18rem;
   margin-bottom: 20px;
 }
 
-div a {
-  text-decoration: none;
-}
-
-.card:hover {
-  box-shadow: 2px 4px 9px 2px var(--effectOpen);
-  cursor: pointer;
-}
-
-.card-title:hover {
-  text-decoration: underline;
-}
-
 .cont {
-  max-width: 105rem;
+  max-width: 101rem;
 }
 
 .card-img {

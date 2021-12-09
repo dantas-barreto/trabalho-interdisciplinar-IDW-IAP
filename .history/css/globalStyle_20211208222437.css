@@ -76,12 +76,8 @@ body {
   margin-bottom: 20px;
 }
 
-div a {
-  text-decoration: none;
-}
-
 .card:hover {
-  box-shadow: 2px 4px 9px 2px var(--effectOpen);
+  box-shadow: 2px 4px 8px 2px var(--effectOpen);
   cursor: pointer;
 }
 
