@@ -135,7 +135,7 @@ function listaCarrinho() {
             <div class="card mb-3 ms-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/iphone.webp" class="img-fluid rounded-start">
+                        <img src="img/celular.webp" class="img-fluid rounded-start">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
