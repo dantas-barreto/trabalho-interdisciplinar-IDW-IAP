@@ -15,7 +15,10 @@
     />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/globalStyle.css" />
-    <link rel="stylesheet" href="styleCar.css" />
+    <link rel="stylesheet" href="css/styleCar.css" />
+
+    <script src="Application.js"></script>
+
     <title>DevTech Express</title>
   </head>
   <body>
@@ -102,7 +105,7 @@
               placeholder="Buscar produtos"
               aria-label="Search"
             />
-            <button class="btn btn-outline-light" type="submit">
+            <button class="btn btn-outline-light me-3" type="submit">
               Procurar
             </button>
           </form>
@@ -110,25 +113,26 @@
       </div>
     </nav>
 
-    <main>
-      <div class="card flex">
-        <div class="card-img">
-          <img src="img/iphone.jpg" alt="" />
-        </div>
-        <div class="card-body margin">
-          <h3>Título do produto</h3>
-          <h5>R$ preço</h5>
-        </div>
-      </div>
+    <main id="carrinhoCompras">
 
-      <footer class="container-fluid">
-        <hr class="featurette-divider" />
-        <p>
-          &copy; 2017–2021 Company, Inc. &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-        </p>
-      </footer>
+      <!-- Lista Carrinho de Compras -->
+
     </main>
+
+    <footer class="container-fluid">
+      <hr class="featurette-divider" />
+      <p>
+        &copy; 2017–2021 Company, Inc. &middot;
+        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+      </p>
+    </footer>
+
+    <script type="text/javascript">
+      if (localStorage.getItem("carrinho") != null) {
+        carrinho = JSON.parse(localStorage.getItem("carrinho"))
+        listaCarrinho()
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
